@@ -1,0 +1,24 @@
+.logo-client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 32px;
+  padding-top: 17.71px;
+  transition: $trasBorder;
+  &:hover,
+  &:focus {
+    border: 1px solid getColor("accent");
+  }
+  &__item {
+    fill: #afb1b8;
+    transition: $trensFill;
+  }
+  &:hover,
+  &:focus {
+    .logo-client__item {
+      fill: getColor("accent");
+    }
+  }
+}

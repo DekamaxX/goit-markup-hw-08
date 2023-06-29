@@ -1,0 +1,20 @@
+.btn {
+  font-weight: 700;
+  font-size: $fontSizeBig;
+  letter-spacing: 0.06em;
+  color: getColor("accentLight");
+  background-color: getColor("accent");
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  transition: $transBgColor, $trensColor;
+  &:hover,
+  &:focus {
+    background-color: getColor("third");
+    color: getColor("primary");
+  }
+}

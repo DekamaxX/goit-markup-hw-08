@@ -1,0 +1,8 @@
+.socialmedia-icon-item-footer {
+  @extend .socialmedia-icon-item;
+  fill: getColor("accentLight");
+}
+.socialmedia-icons-footer {
+  @extend .socialmedia-icons;
+  background-color: rgba(255, 255, 255, 0.1);
+}
