@@ -64,6 +64,15 @@
             ><a class="telephon" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
+        <button
+          class="header__menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__menu-toggle-icon" width="24" height="16">
+            <use href="images/menu.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -98,10 +107,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  src="images/portfolio1.jpg"
+                  src="images/portfoliopicture1.jpg"
                   alt="The headphones"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture1@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -118,11 +126,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio2.jpg"
+                  src="images/portfoliopicture2.jpg"
                   alt="The headphones"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture2@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -141,11 +147,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio3.jpg"
+                  src="images/portfoliopicture3.jpg"
                   alt="The headphones"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture3@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -162,11 +166,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio4.jpg"
+                  src="images/portfoliopicture4.jpg"
                   alt="The headphones"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture4@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -183,11 +185,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio5.jpg"
+                  src="images/portfoliopicture5.jpg"
                   alt="Two boxes"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture5@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -204,11 +204,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio6.jpg"
+                  src="images/portfoliopicture6.jpg"
                   alt="A monitor presenting a webside"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture6@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -225,11 +223,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio7.jpg"
+                  src="images/portfoliopicture7.jpg"
                   alt="Open colorful magazine"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture7@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -246,11 +242,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio8.jpg"
+                  src="images/portfoliopicture8.jpg"
                   alt="Printed label LABELTAG"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture8@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -267,11 +261,9 @@
             <li class="product">
               <div class="product__container">
                 <img
-                  class="picture"
-                  src="images/portfolio9.jpg"
+                  src="images/portfoliopicture9.jpg"
                   alt="A work on a laptop"
-                  width="370"
-                  height="294"
+                  srcset="images/portfoliopicture9@2x.jpg 2x"
                 />
                 <p class="product__description">
                   Technocrack jest popularną platformą wykorzystywaną do
@@ -291,14 +283,18 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__contacts">
-          <h3 class="logo-main-footer" lang="pl">
-            <span class="logo-main--accent">Web</span>Studio
-          </h3>
-          <address class="footer__address" lang="pl">
-            m. Warszawa, Aleje Jerozolimskie 21
-          </address>
-          <ul>
+        <div class="footer__container-contacts">
+          <ul class="footer__contacts">
+            <li>
+              <h3 class="logo-main-footer" lang="pl">
+                <span class="logo-main--accent">Web</span>Studio
+              </h3>
+            </li>
+            <li>
+              <address class="footer__address" lang="pl">
+                m. Warszawa, Aleje Jerozolimskie 21
+              </address>
+            </li>
             <li class="footer__links">
               <a class="email-footer" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -310,29 +306,47 @@
               >
             </li>
           </ul>
-        </div>
-        <div>
-          <p class="footer__invitation">Dołącz do nas</p>
-          <ul class="icons-footer">
-            <li class="socialmedia-icons-footer">
-              <svg class="socialmedia-icon-item-footer" width="20" height="20">
-                <use href="images/icons.svg#icon-instagram2"></use>
-              </svg>
-            </li>
-            <li class="socialmedia-icons-footer">
-              <svg class="socialmedia-icon-item-footer" width="20" height="20">
-                <use href="images/icons.svg#icon-twitter1"></use>
-              </svg>
-            </li>
-            <li class="socialmedia-icons-footer">
-              <svg class="socialmedia-icon-item-footer" width="20" height="20">
-                <use href="images/icons.svg#icon-facebook1"></use>
-              </svg>
-            </li>
-            <li class="socialmedia-icons-footer">
-              <svg class="socialmedia-icon-item-footer" width="20" height="20">
-                <use href="images/icons.svg#icon-linkedin1"></use>
-              </svg>
+          <ul>
+            <li><p class="footer__invitation">Dołącz do nas</p></li>
+            <li>
+              <ul class="icons-footer">
+                <li class="socialmedia-icons-footer">
+                  <svg
+                    class="socialmedia-icon-item-footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="images/icons.svg#icon-instagram2"></use>
+                  </svg>
+                </li>
+                <li class="socialmedia-icons-footer">
+                  <svg
+                    class="socialmedia-icon-item-footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="images/icons.svg#icon-twitter1"></use>
+                  </svg>
+                </li>
+                <li class="socialmedia-icons-footer">
+                  <svg
+                    class="socialmedia-icon-item-footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="images/icons.svg#icon-facebook1"></use>
+                  </svg>
+                </li>
+                <li class="socialmedia-icons-footer">
+                  <svg
+                    class="socialmedia-icon-item-footer"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="images/icons.svg#icon-linkedin1"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -346,9 +360,71 @@
               id="mail"
               placeholder="E-mail"
           /></label>
-          <button type="submit" class="btn-icon" lang="pl">Zapisz się</button>
+          <button type="submit" class="newsletter__btn" lang="pl">
+            Zapisz się
+          </button>
         </form>
       </div>
     </footer>
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+      <button class="mobil-menu__menu-toggle js-close-menu">
+        <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+          <use href="images/clouse.svg#icon-close"></use>
+        </svg>
+      </button>
+      <menu class="mobile-nav">
+        <li>
+          <a class="mobile-nav__link" href="index.html" lang="pl">Agencja</a>
+        </li>
+        <li>
+          <a
+            class="mobile-nav__link mobile-nav__link--accent"
+            href="portfolio.html"
+            lang="pl"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="kontakt.html" lang="pl">Kontakt</a>
+        </li>
+      </menu>
+      <ul class="contact-mobil">
+        <li>
+          <a class="contact-mobil__telephon" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a class="contact-mobil__email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <ul class="socialmedia-mobil">
+            <li class="socialmedia-mobil__item">
+              <a class="socialmedia-mobil__link" href="">Instagram</a>
+            </li>
+            <li class="socialmedia-mobil__item">
+              <a class="socialmedia-mobil__link" href="">Twitter</a>
+            </li>
+            <li class="socialmedia-mobil__item">
+              <a class="socialmedia-mobil__link" href="">Facebook</a>
+            </li>
+            <li
+              class="socialmedia-mobil__item socialmedia-mobil__item--notborder"
+            >
+              <a class="socialmedia-mobil__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
