@@ -1,4 +1,10 @@
 .clients-logos {
   display: flex;
-  gap: 36px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media #{$desktop} {
+  .clients-logos {
+    flex-wrap: nowrap;
+  }
 }

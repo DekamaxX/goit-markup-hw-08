@@ -1,4 +1,17 @@
 .team {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 30px;
+}
+@media #{$tablet} {
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media #{$desktop} {
+  .team {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
 }

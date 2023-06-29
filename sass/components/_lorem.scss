@@ -1,10 +1,19 @@
 .lorem {
   display: flex;
-  gap: 40px;
-  margin-bottom: 94px;
-
+  flex-direction: column;
+  gap: 30px;
+  &__logo {
+    display: flex;
+    height: 120px;
+    border-radius: 4px;
+    background: getColor("third");
+  }
+  &__icon {
+    margin: auto;
+  }
   &__title {
     margin-bottom: 10px;
+    margin-top: 30px;
     font-size: $fontSizeSmoll;
     letter-spacing: 0.03em;
     line-height: 1.1;
@@ -14,5 +23,31 @@
     letter-spacing: 0.03em;
     line-height: 1.7;
     color: getColor("secondary");
+  }
+}
+@media #{$tablet} {
+  .lorem {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__logo {
+      max-width: 354px;
+    }
+    &__text {
+      max-width: 354px;
+    }
+  }
+}
+@media #{$desktop} {
+  .lorem {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 94px;
+    &__logo {
+      max-width: 270px;
+    }
+    &__text {
+      max-width: 270px;
+    }
   }
 }

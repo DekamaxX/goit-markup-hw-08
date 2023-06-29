@@ -3,6 +3,19 @@
   color: getColor("primary");
 }
 .container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media #{$tablet} {
+  .container {
+    max-width: 768px;
+  }
+}
+@media #{$desktop} {
+  .container {
+    max-width: 1200px;
+  }
 }

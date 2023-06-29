@@ -1,12 +1,35 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
-    margin-bottom: 50px;
-    font-size: $fontSizeTitle;
+    margin-bottom: 30px;
+    font-size: 28px;
     letter-spacing: 0.03em;
     text-align: center;
     line-height: 1.2;
+    &--none {
+      display: none;
+    }
+  }
+}
+@media #{$tablet} {
+  .section {
+    &--tablet {
+      padding-bottom: 45px;
+    }
+  }
+}
+@media #{$desktop} {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+      margin-bottom: 50px;
+      font-size: $fontSizeTitle;
+      &--none {
+        display: block;
+      }
+    }
   }
 }

@@ -1,17 +1,17 @@
 .logo-client {
-  width: 170px;
+  display: flex;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
-  padding-left: 32px;
-  padding-top: 17.71px;
   transition: $trasBorder;
   &:hover,
   &:focus {
     border: 1px solid getColor("accent");
   }
   &__item {
+    margin: auto;
     fill: #afb1b8;
     transition: $trensFill;
   }
@@ -20,5 +20,15 @@
     .logo-client__item {
       fill: getColor("accent");
     }
+  }
+}
+@media #{$tablet} {
+  .logo-client {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media #{$desktop} {
+  .logo-client {
+    flex-basis: calc((100% - 150px) / 6);
   }
 }

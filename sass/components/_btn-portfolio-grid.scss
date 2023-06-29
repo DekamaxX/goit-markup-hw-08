@@ -1,6 +1,21 @@
 .btn-portfolio-grid {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 8px;
+}
+@media #{$tablet} {
+  .btn-portfolio-grid {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+@media #{$desktop} {
+  .btn-portfolio-grid {
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }

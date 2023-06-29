@@ -1,22 +1,46 @@
 .title-section {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
+  min-width: 320px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background.jpg);
-
+    url("../images/background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
   &__title {
-    margin-bottom: 30;
+    margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     letter-spacing: 0.06em;
     line-height: 1.4;
     color: getColor("accentLight");
-    margin-bottom: 30px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .title-section {
+    background-image: url("../images/background.jpg");
+  }
+}
+@media #{$tablet} {
+  .title-section {
+    max-width: 768px;
+  }
+}
+@media #{$desktop} {
+  .title-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+
+    &__title {
+      font-size: 44px;
+    }
   }
 }

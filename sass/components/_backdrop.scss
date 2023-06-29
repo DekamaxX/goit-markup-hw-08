@@ -4,6 +4,9 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 550;
+  padding-left: 8px;
+  padding-right: 8px;
   background-color: rgba(0, 0, 0, 0.2);
   cursor: not-allowed;
   display: flex;
@@ -17,4 +20,16 @@
   opacity: 0;
   pointer-events: none;
   transform: scale(0);
+}
+@media #{$tablet} {
+  .backdrop {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media #{$desktop} {
+  .backdrop {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

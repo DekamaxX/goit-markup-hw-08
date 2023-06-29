@@ -4,9 +4,11 @@
   padding-bottom: 60px;
   &__container {
     display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   &__contacts {
-    margin-right: 70px;
+    margin-bottom: 60px;
   }
   &__address {
     margin-top: 20px;
@@ -29,5 +31,34 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: getColor("accentLight");
+  }
+}
+@media #{$tablet} {
+  .footer {
+    &__container-contacts {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__contacts {
+      margin-bottom: 0;
+    }
+  }
+}
+@media #{$desktop} {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__container {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+    }
+    &__container-contacts {
+      display: flex;
+    }
+    &__contacts {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
   }
 }
